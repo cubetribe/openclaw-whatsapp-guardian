@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Environment - NEVER COMMIT!
+.env
+.env.local
+.env.*.local
+
+# Data directories (contain sensitive data!)
+data/auth/
+data/inbox/
+data/outbox/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+.temp/
+*.pid
+
+# Config with secrets (use .example files)
+config/system-prompt.md
+config/faqs.md
+
+# Keep example configs
+!config/*.example.md
